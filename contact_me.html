@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="https://unpkg.com/swup@3"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="form-container-main">
+        <div class="form-container">
+            <div class="form-image">
+                <h1 class="montserrat">Get in touch</h1>
+                <model-viewer class="model" alt="laptop" src="images/gmail.glb" shadow-intensity="1"  camera-controls touch-action="pan-y"  environment-image="images/dancing_hall_2k.hdr" exposure="1.5"   disable-zoom  camera-target="-0.01m 0.2m 0m"  camera-orbit="-45deg 70deg 9m" autoplay></model-viewer> 
+            </div>
+            <form action="https://formspree.io/f/meqyegny" method="POST" class="form">
+                    <input type="text" id="name" name="name" placeholder="Name" autofocus required>
+                    <input type="email" id="mail" name="email" placeholder="Email" required>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Say Hello" required></textarea>
+                    <div class="button-container">
+                        <input type="submit" class="send-button" value="Send">
+                    <!-- <div class="send-button">Send</div> -->
+                    <div class="reset-button-container">
+                        <input type="reset" class="reset-button">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
