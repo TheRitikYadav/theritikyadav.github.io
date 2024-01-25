@@ -871,6 +871,17 @@ img {
   width: 150px;
   margin: 0px auto;
 }
+
+
+.major-projects{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 50px;
+  justify-content: space-evenly;
+}
+
+
 @media (max-width: 500px) {
   .mywork .logo img {
     width: 80px;
